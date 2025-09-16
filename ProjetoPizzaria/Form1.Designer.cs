@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnNovo = new System.Windows.Forms.Button();
-            this.dgvTitulo = new System.Windows.Forms.DataGridView();
+            this.dgvPedido = new System.Windows.Forms.DataGridView();
             this.txtValorPizza = new System.Windows.Forms.TextBox();
             this.lblValorPizza = new System.Windows.Forms.Label();
             this.cmbTamanhoPizza = new System.Windows.Forms.ComboBox();
@@ -48,7 +48,7 @@
             this.btnSair = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTitulo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).BeginInit();
             this.grpOpcionais.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,13 +61,13 @@
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
             // 
-            // dgvTitulo
+            // dgvPedido
             // 
-            this.dgvTitulo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTitulo.Location = new System.Drawing.Point(122, 241);
-            this.dgvTitulo.Name = "dgvTitulo";
-            this.dgvTitulo.Size = new System.Drawing.Size(554, 150);
-            this.dgvTitulo.TabIndex = 4;
+            this.dgvPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPedido.Location = new System.Drawing.Point(122, 241);
+            this.dgvPedido.Name = "dgvPedido";
+            this.dgvPedido.Size = new System.Drawing.Size(554, 150);
+            this.dgvPedido.TabIndex = 4;
             // 
             // txtValorPizza
             // 
@@ -250,13 +250,13 @@
             this.Controls.Add(this.txtTotalPagar);
             this.Controls.Add(this.txtValorOpcionais);
             this.Controls.Add(this.cmbTamanhoPizza);
-            this.Controls.Add(this.dgvTitulo);
+            this.Controls.Add(this.dgvPedido);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.txtValorPizza);
             this.Controls.Add(this.lblValorPizza);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTitulo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).EndInit();
             this.grpOpcionais.ResumeLayout(false);
             this.grpOpcionais.PerformLayout();
             this.ResumeLayout(false);
@@ -267,7 +267,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnNovo;
-        private System.Windows.Forms.DataGridView dgvTitulo;
+        private System.Windows.Forms.DataGridView dgvPedido;
         private System.Windows.Forms.TextBox txtValorPizza;
         private System.Windows.Forms.Label lblValorPizza;
         private System.Windows.Forms.ComboBox cmbTamanhoPizza;
