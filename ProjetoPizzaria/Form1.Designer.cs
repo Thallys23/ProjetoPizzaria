@@ -30,11 +30,11 @@
         {
             this.btnTitulo = new System.Windows.Forms.Button();
             this.dgvTitulo = new System.Windows.Forms.DataGridView();
-            this.txtTitulo = new System.Windows.Forms.TextBox();
+            this.txtValorPizza = new System.Windows.Forms.TextBox();
             this.lblValorPizza = new System.Windows.Forms.Label();
             this.cmbTamanhoPizza = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtValorOpcionais = new System.Windows.Forms.TextBox();
+            this.txtTotalPagar = new System.Windows.Forms.TextBox();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.lblPesquisar = new System.Windows.Forms.Label();
@@ -66,12 +66,12 @@
             this.dgvTitulo.Size = new System.Drawing.Size(554, 150);
             this.dgvTitulo.TabIndex = 4;
             // 
-            // txtTitulo
+            // txtValorPizza
             // 
-            this.txtTitulo.Location = new System.Drawing.Point(231, 94);
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(105, 20);
-            this.txtTitulo.TabIndex = 1;
+            this.txtValorPizza.Location = new System.Drawing.Point(231, 94);
+            this.txtValorPizza.Name = "txtValorPizza";
+            this.txtValorPizza.Size = new System.Drawing.Size(105, 20);
+            this.txtValorPizza.TabIndex = 1;
             // 
             // lblValorPizza
             // 
@@ -91,20 +91,20 @@
             this.cmbTamanhoPizza.TabIndex = 5;
             this.cmbTamanhoPizza.Text = "TAMANHO DA PIZZA";
             // 
-            // textBox1
+            // txtValorOpcionais
             // 
-            this.textBox1.Location = new System.Drawing.Point(362, 94);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 20);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtValorOpcionais.Location = new System.Drawing.Point(362, 94);
+            this.txtValorOpcionais.Name = "txtValorOpcionais";
+            this.txtValorOpcionais.Size = new System.Drawing.Size(127, 20);
+            this.txtValorOpcionais.TabIndex = 6;
+            this.txtValorOpcionais.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtTotalPagar
             // 
-            this.textBox2.Location = new System.Drawing.Point(515, 94);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(115, 20);
-            this.textBox2.TabIndex = 7;
+            this.txtTotalPagar.Location = new System.Drawing.Point(515, 94);
+            this.txtTotalPagar.Name = "txtTotalPagar";
+            this.txtTotalPagar.Size = new System.Drawing.Size(115, 20);
+            this.txtTotalPagar.TabIndex = 7;
             // 
             // txtPesquisar
             // 
@@ -214,12 +214,12 @@
             this.Controls.Add(this.lblPesquisar);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.txtPesquisar);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTotalPagar);
+            this.Controls.Add(this.txtValorOpcionais);
             this.Controls.Add(this.cmbTamanhoPizza);
             this.Controls.Add(this.dgvTitulo);
             this.Controls.Add(this.btnTitulo);
-            this.Controls.Add(this.txtTitulo);
+            this.Controls.Add(this.txtValorPizza);
             this.Controls.Add(this.lblValorPizza);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -235,11 +235,11 @@
 
         private System.Windows.Forms.Button btnTitulo;
         private System.Windows.Forms.DataGridView dgvTitulo;
-        private System.Windows.Forms.TextBox txtTitulo;
+        private System.Windows.Forms.TextBox txtValorPizza;
         private System.Windows.Forms.Label lblValorPizza;
         private System.Windows.Forms.ComboBox cmbTamanhoPizza;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtValorOpcionais;
+        private System.Windows.Forms.TextBox txtTotalPagar;
         private System.Windows.Forms.TextBox txtPesquisar;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label lblPesquisar;
