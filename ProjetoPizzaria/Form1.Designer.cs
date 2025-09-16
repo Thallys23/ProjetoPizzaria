@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnTitulo = new System.Windows.Forms.Button();
+            this.btnNovo = new System.Windows.Forms.Button();
             this.dgvTitulo = new System.Windows.Forms.DataGridView();
             this.txtValorPizza = new System.Windows.Forms.TextBox();
             this.lblValorPizza = new System.Windows.Forms.Label();
@@ -45,18 +45,21 @@
             this.chkCebola = new System.Windows.Forms.CheckBox();
             this.chkCatupiry = new System.Windows.Forms.CheckBox();
             this.chkTempero = new System.Windows.Forms.CheckBox();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTitulo)).BeginInit();
             this.grpOpcionais.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnTitulo
+            // btnNovo
             // 
-            this.btnTitulo.Location = new System.Drawing.Point(122, 397);
-            this.btnTitulo.Name = "btnTitulo";
-            this.btnTitulo.Size = new System.Drawing.Size(107, 23);
-            this.btnTitulo.TabIndex = 2;
-            this.btnTitulo.Text = "Titulo";
-            this.btnTitulo.UseVisualStyleBackColor = true;
+            this.btnNovo.Location = new System.Drawing.Point(122, 397);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(107, 23);
+            this.btnNovo.TabIndex = 2;
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.UseVisualStyleBackColor = true;
             // 
             // dgvTitulo
             // 
@@ -203,11 +206,41 @@
             this.chkTempero.Text = "Tempero do City";
             this.chkTempero.UseVisualStyleBackColor = true;
             // 
+            // btnSair
+            // 
+            this.btnSair.Location = new System.Drawing.Point(569, 397);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(107, 23);
+            this.btnSair.TabIndex = 15;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Location = new System.Drawing.Point(415, 397);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(107, 23);
+            this.btnCalcular.TabIndex = 16;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Location = new System.Drawing.Point(265, 397);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(107, 23);
+            this.btnSalvar.TabIndex = 17;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.grpOpcionais);
             this.Controls.Add(this.lblValorOpcionais);
             this.Controls.Add(this.lblTotalPagar);
@@ -218,7 +251,7 @@
             this.Controls.Add(this.txtValorOpcionais);
             this.Controls.Add(this.cmbTamanhoPizza);
             this.Controls.Add(this.dgvTitulo);
-            this.Controls.Add(this.btnTitulo);
+            this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.txtValorPizza);
             this.Controls.Add(this.lblValorPizza);
             this.Name = "Form1";
@@ -233,7 +266,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnTitulo;
+        private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.DataGridView dgvTitulo;
         private System.Windows.Forms.TextBox txtValorPizza;
         private System.Windows.Forms.Label lblValorPizza;
@@ -250,6 +283,9 @@
         private System.Windows.Forms.CheckBox chkCatupiry;
         private System.Windows.Forms.CheckBox chkCebola;
         private System.Windows.Forms.CheckBox chkBorda;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Button btnSalvar;
     }
 }
 
