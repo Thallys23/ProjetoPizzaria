@@ -41,10 +41,10 @@
             this.lblTotalPagar = new System.Windows.Forms.Label();
             this.lblValorOpcionais = new System.Windows.Forms.Label();
             this.grpOpcionais = new System.Windows.Forms.GroupBox();
-            this.chkBorda = new System.Windows.Forms.CheckBox();
-            this.chkCebola = new System.Windows.Forms.CheckBox();
-            this.chkCatupiry = new System.Windows.Forms.CheckBox();
             this.chkTempero = new System.Windows.Forms.CheckBox();
+            this.chkCatupiry = new System.Windows.Forms.CheckBox();
+            this.chkCebola = new System.Windows.Forms.CheckBox();
+            this.chkBorda = new System.Windows.Forms.CheckBox();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
@@ -166,25 +166,15 @@
             this.grpOpcionais.Text = "ESCOLHAS OPCIONAIS";
             this.grpOpcionais.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // chkBorda
+            // chkTempero
             // 
-            this.chkBorda.AutoSize = true;
-            this.chkBorda.Location = new System.Drawing.Point(6, 19);
-            this.chkBorda.Name = "chkBorda";
-            this.chkBorda.Size = new System.Drawing.Size(107, 17);
-            this.chkBorda.TabIndex = 14;
-            this.chkBorda.Text = "Borda Recheada";
-            this.chkBorda.UseVisualStyleBackColor = true;
-            // 
-            // chkCebola
-            // 
-            this.chkCebola.AutoSize = true;
-            this.chkCebola.Location = new System.Drawing.Point(6, 42);
-            this.chkCebola.Name = "chkCebola";
-            this.chkCebola.Size = new System.Drawing.Size(111, 17);
-            this.chkCebola.TabIndex = 15;
-            this.chkCebola.Text = "Cebola sem choro";
-            this.chkCebola.UseVisualStyleBackColor = true;
+            this.chkTempero.AutoSize = true;
+            this.chkTempero.Location = new System.Drawing.Point(6, 77);
+            this.chkTempero.Name = "chkTempero";
+            this.chkTempero.Size = new System.Drawing.Size(103, 17);
+            this.chkTempero.TabIndex = 17;
+            this.chkTempero.Text = "Tempero do City";
+            this.chkTempero.UseVisualStyleBackColor = true;
             // 
             // chkCatupiry
             // 
@@ -196,15 +186,25 @@
             this.chkCatupiry.Text = "Catupiry Original";
             this.chkCatupiry.UseVisualStyleBackColor = true;
             // 
-            // chkTempero
+            // chkCebola
             // 
-            this.chkTempero.AutoSize = true;
-            this.chkTempero.Location = new System.Drawing.Point(6, 77);
-            this.chkTempero.Name = "chkTempero";
-            this.chkTempero.Size = new System.Drawing.Size(103, 17);
-            this.chkTempero.TabIndex = 17;
-            this.chkTempero.Text = "Tempero do City";
-            this.chkTempero.UseVisualStyleBackColor = true;
+            this.chkCebola.AutoSize = true;
+            this.chkCebola.Location = new System.Drawing.Point(6, 42);
+            this.chkCebola.Name = "chkCebola";
+            this.chkCebola.Size = new System.Drawing.Size(111, 17);
+            this.chkCebola.TabIndex = 15;
+            this.chkCebola.Text = "Cebola sem choro";
+            this.chkCebola.UseVisualStyleBackColor = true;
+            // 
+            // chkBorda
+            // 
+            this.chkBorda.AutoSize = true;
+            this.chkBorda.Location = new System.Drawing.Point(6, 19);
+            this.chkBorda.Name = "chkBorda";
+            this.chkBorda.Size = new System.Drawing.Size(107, 17);
+            this.chkBorda.TabIndex = 14;
+            this.chkBorda.Text = "Borda Recheada";
+            this.chkBorda.UseVisualStyleBackColor = true;
             // 
             // btnSair
             // 
@@ -237,7 +237,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(751, 450);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.btnSair);
