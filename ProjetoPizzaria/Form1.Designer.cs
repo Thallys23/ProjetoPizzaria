@@ -68,6 +68,7 @@
             this.dgvPedido.Name = "dgvPedido";
             this.dgvPedido.Size = new System.Drawing.Size(554, 150);
             this.dgvPedido.TabIndex = 4;
+            this.dgvPedido.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPedido_CellContentClick);
             // 
             // txtValorPizza
             // 
@@ -223,6 +224,7 @@
             this.btnCalcular.TabIndex = 16;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // btnSalvar
             // 
@@ -256,6 +258,7 @@
             this.Controls.Add(this.lblValorPizza);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).EndInit();
             this.grpOpcionais.ResumeLayout(false);
             this.grpOpcionais.PerformLayout();
