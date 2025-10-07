@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +12,9 @@ using System.Windows.Forms;
 namespace ProjetoPizzaria
 {
     public partial class Form1 : Form
-    {
+    {   // Instanciando a classe conexão
+        Conexao con = new Conexao();
+
         public Form1()
         {
             InitializeComponent();
@@ -93,7 +96,53 @@ namespace ProjetoPizzaria
             txtTotalPagar.Text = Convert.ToString(valorTotal);
         }
 
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            //verifica os campos
+            if (txtValorPizza.Text == "")
+            {
+                MessageBox.Show("Campo Obrigatório");
+                txtValorPizza.Focus();
+            }
+            else if (txtValorOpcionais.Text == "")
+            {
+                MessageBox.Show("Campo Obrigatório");
+                txtValorOpcionais.Focus();
+            }
+            else if (txtTotalPagar.Text == "")
+            {
+                MessageBox.Show("Campo Obrigatório");
+                txtTotalPagar.Focus();
+            }
+            else
+            {
+                //tratamento de erros
+                try
+                {
+                    //inserindo dados no banco de dados
+                    string sql = "insert into tbPedido(tipoPizza,valorPizza,valorOpcao,valorTotal) values(@pizza,@vpizza,@vopcao,@total)";
+                    MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD());
+                    cmd.Parameters.Add("@pizza", MySqlDbType.Text).Value = cmbTamanhoPizza.Text;
+                    cmd.Parameters.Add("@vpizza", MySqlDbType.Text).Value = txtValorPizza.Text;
+                    cmd.Parameters.Add("@vopcao", MySqlDbType.Text).Value = txtValorOpcionais.Text;
+                    cmd.Parameters.Add("@total", MySqlDbType.Text).Value = txtTotalPagar.Text;
+                    cmd.ExecuteNonQuery(); //Guarda/grava os dados no banco
 
+                    MessageBox.Show("Dados cadastrados com Sucesso !!!");
+                    cmbTamanhoPizza.Text = "";
+                    txtValorPizza.Text = "";
+                    txtValorOpcionais.Text = "";
+                    txtTotalPagar.Text = "";
+                    cmbTamanhoPizza.Focus();
+                    con.DesConnectarBD();
+
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show(erro.Message);
+                }
+            }
+        }
     }
 }
 
