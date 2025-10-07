@@ -36,7 +36,7 @@
             this.txtValorOpcionais = new System.Windows.Forms.TextBox();
             this.txtTotalPagar = new System.Windows.Forms.TextBox();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblPesquisar = new System.Windows.Forms.Label();
             this.lblTotalPagar = new System.Windows.Forms.Label();
             this.lblValorOpcionais = new System.Windows.Forms.Label();
@@ -69,6 +69,7 @@
             this.dgvPedido.Size = new System.Drawing.Size(554, 150);
             this.dgvPedido.TabIndex = 4;
             this.dgvPedido.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPedido_CellContentClick);
+            this.dgvPedido.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvPedido_MouseDoubleClick);
             // 
             // txtValorPizza
             // 
@@ -116,13 +117,14 @@
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(100, 20);
             this.txtPesquisar.TabIndex = 8;
+            this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged_1);
             // 
-            // textBox4
+            // txtCodigo
             // 
-            this.textBox4.Location = new System.Drawing.Point(60, 24);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 9;
+            this.txtCodigo.Location = new System.Drawing.Point(60, 24);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.TabIndex = 9;
             // 
             // lblPesquisar
             // 
@@ -248,7 +250,7 @@
             this.Controls.Add(this.lblValorOpcionais);
             this.Controls.Add(this.lblTotalPagar);
             this.Controls.Add(this.lblPesquisar);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.txtTotalPagar);
             this.Controls.Add(this.txtValorOpcionais);
@@ -278,7 +280,7 @@
         private System.Windows.Forms.TextBox txtValorOpcionais;
         private System.Windows.Forms.TextBox txtTotalPagar;
         private System.Windows.Forms.TextBox txtPesquisar;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label lblPesquisar;
         private System.Windows.Forms.Label lblTotalPagar;
         private System.Windows.Forms.Label lblValorOpcionais;
